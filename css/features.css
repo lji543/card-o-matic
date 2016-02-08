@@ -1,0 +1,95 @@
+.colors {
+	width: 30px;
+	height: 30px;
+	margin: 1px;
+	cursor: pointer;
+	border: 2px solid black;
+	float: left;
+}
+
+#blue {
+	background-color: blue
+}
+
+#green {
+	background-color: green
+}
+
+#purple {
+	background-color: purple
+}
+
+#yellow {
+	background-color: yellow
+}
+
+#red {
+	background-color: red
+}
+
+#orange {
+	background-color: orange
+}
+
+#gray {
+	background-color: gray
+}
+
+.texture {
+	width: 30px;
+	height: 30px;
+	margin: 1px;
+	cursor: pointer;
+	border: 2px solid black;
+	float: left;
+}
+
+#circles {
+	background-image: url('../images/texture-circles.png');
+}
+
+#cloth {
+	background-image: url('../images/texture-cloth.png');
+}
+
+#paper {
+	background-image: url('../images/texture-paper.png');
+}
+
+#swirls {
+	background-image: url('../images/texture-swirls.png');
+}
+
+#message-output {
+	margin:25px 5px 2px 5px;
+	text-align: center;
+	font-family: papyrus;
+	height: 80px;
+	width: 100%;
+	font-size: 45px;
+}
+
+#recipient-output {
+	margin:5px 5px 2px 5px;
+	text-align: center;
+	font-family: papyrus;
+	height: 80px;
+	width: 100%;
+	font-size: 45px;
+}
+
+#recipient-error {
+	color:red;
+}
+
+.stickers_on_card {
+	cursor: move;
+}
+
+
+
+
+
+
+
+

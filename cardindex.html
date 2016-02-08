@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Card-o-Matic</title>
+	
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="css/features.css" type="text/css">
+
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	
+</head>
+
+
+<body>
+
+<div id='wrapper'>
+
+	<h1>Card-o-Matic</h1>
+
+	<!-- Left side with all the controls -->
+	<div id='controls'>
+	
+		<!-- Color picker -->
+			<h2>Pick a color</h2>
+
+			<div class='colors' id='blue'></div>
+			<div class='colors' id='green'></div>
+			<div class='colors' id='purple'></div>
+			<div class='colors' id='yellow'></div>
+			<div class='colors' id='red'></div>
+			<div class='colors' id='orange'></div>
+			<div class='colors' id='gray'></div>
+			<div class='clearfix'></div>
+			
+					
+		<!-- Texture picture -->
+			<h2>Pick a texture</h2>
+
+			<!--
+			<div class='texture' ><img src="images/texture-circles.png"></div>
+			<div class='texture' ><img src="images/texture-cloth.png"></div>
+			<div class='texture' ><img src="images/texture-paper.png"></div>
+			<div class='texture' ><img src="images/texture-swirls.png"></div>
+			<div class='clearfix'></div>
+			-->
+
+			<div class='texture' id='circles'></div>
+			<div class='texture' id='cloth'></div>
+			<div class='texture' id='paper'></div>
+			<div class='texture' id='swirls'></div>
+			<div class='clearfix'></div>
+
+						
+		<!-- Message -->	
+			<h2>Pick a message</h2>
+
+			<input type='radio' name='message' class='messages' id='happy-birthday'>
+			<label for='happy-birthday'> Happy Birthday</label><br>
+			<input type='radio' name='message' class='messages' id='thank-you'>
+			<label for='thank-you'>Thank You</label><br>
+			<input type='radio' name='message' class='messages' id='congratulations'>
+			<label for='congratulations'>Congratulations</label><br>
+			<input type='radio' name='message' class='messages' id='miss-you'>
+			<label for='miss-you'>I miss you</label><br>
+		
+		<!-- Recipient -->	
+			<h2>Dear...</h2>	
+			<input type='text' id='recipient' maxlength="14">
+			<span class='error' id='recipient-error'></span>
+			
+		<!-- Sticker picker -->	
+			<h2>Click a sticker to add</h2>
+
+			<img class='stickers' src='images/sticker-green-gift.png' alt='Green gift sticker'>
+			<img class='stickers' src='images/sticker-heart.png' alt='Heart sticker'>
+			<img class='stickers' src='images/sticker-yellow-gift.png' alt='Yellow gift sticker'>
+			<img class='stickers' src='images/sticker-star.png' alt='Star sticker'>
+
+		<!-- Sticker Search -->		
+				<br>
+			<small>Search for new stickers</small>
+				<br>
+				<input type='text' id='sticker-search'>
+				<input type='button' id='sticker-search-btn' value='Search'>
+				<br>
+				<small>Ex: &ldquo;unicorns&rdquo;, &ldquo;sparkles&rdquo;, &ldquo;balloons&rdquo;, &ldquo;kittens&rdquo;, &ldquo;puppies&rdquo;</small>
+				<div id='sticker-search-results'></div>
+			
+			
+	</div>
+	
+	<!-- Right side with the live preview -->
+	<div id='preview'>
+	
+		<div id='card-background'>
+			<div id='canvas'>
+				<div id='message-output'></div>
+				<div id='recipient-output'></div>
+			</div>
+		</div>
+		
+		<!-- Buttons -->
+		<input type='button' id='refresh-btn' value='Start over'>
+		<input type='button' id='print-btn' value='Print'>
+	</div>
+	
+</div>
+	
+<script src="js/card-o-matic.js"></script>	
+	
+</body>
+
+</html>
